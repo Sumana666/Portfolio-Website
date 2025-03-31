@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Technical-Skills" class="nav-link">Technical Skills</a></li>
+                    <li><a href="#Projects" class="nav-link">Projects</a></li>
+                    <li><a href="#Contact-me" class="nav-link">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello,My name is Sumana Halder persuing B.Tech in Computer Science and Engineering  
+                <div>And I want to become a</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn" id="DownloadCVBtn">Download CV</button>
+                    <button class="btn" id="GithubBtn">Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="Sumana.png">
+            </div>
+        </section>
+        <section class="secondSection">
+            <section class="secondSection1" id="Technical-Skills">
+                <div class="Tech-section">
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <li>HTML, CSS & JavaScript</li>
+                        <li>React JS</li>
+                        <li>Java</li>
+                        <li>Cloud Computing(AWS)</li>
+                        <li>Computer Fundementals(OS, DBMS, CN, OOPS)</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="secondSection2" id="Projects">
+                <h1>Projects</h1>
+            <div class="box">
+                <div class="verticle">
+                    <div class="projects">
+                        Amazon Clone using HTML & CSS
+                    </div>
+                    <div class="text">
+                        An Amazon Clone using HTML and CSS is a simple frontend project that mimics the design of Amazon’s homepage or product pages. It helps demonstrate web development skills, focusing on layout structuring and styling.It replicates the layout and design of Amazon’s homepage using only HTML and CSS. It helps in understanding web page structuring, styling, and responsiveness.It provides a static yet fully responsive interface.It demonstrates HTML & CSS proficiency,Uses modern CSS layout techniques (Flexbox & Grid),Showcases responsive web design,Mimics a real-world eCommerce website UI and Helps understand eCommerce design principles.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <div class="projects">
+                        Rock, Paper, Scissors Game Using HTML,CSS and JavaScript
+                    </div>
+                    <div class="text">
+                        The Rock, Paper, Scissors game is a simple yet fun project built using HTML, CSS, and JavaScript. It allows users to play against the computer, which makes random choices.The user selects Rock, Paper, or Scissors.The computer randomly picks one of the three options.The game logic determines the winner based on the classic rules:Rock beats Scissors,Scissors beat Paper and Paper beats Rock.The result is displayed on the screen, and the score updates accordingly.Thus it works.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <div class="projects">
+                        Tic-Tac-Toe Game Using HTML,CSS and JavaScript
+                    </div>
+                    <div class="text">
+                        I built a simple Tic-Tac-Toe game using HTML, CSS, and JavaScript as part of my portfolio to showcase my front-end development skills. The game allows two players to take turns marking X and O on a 3x3 grid, with logic to determine the winner or declare a draw.The grid is created using HTML divs styled with CSS.JavaScript manages player turns and checks for a winning combination (rows, columns, or diagonals).When a player wins, the game highlights the winning combination and displays a message.If the grid fills without a winner, the game declares a draw.The reset button clears the board to start a new game.
+                    </div>
+                </div>
+                <div class="verticle">
+                    <div class="projects">
+                        Currency Converter App Using HTML,CSS and JavaScript
+                    </div>
+                    <div class="text">
+                        I built a Currency Converter App using HTML, CSS, and JavaScript, showcasing my frontend development and API integration skills. The app allows users to select two currencies and enter an amount to get real-time conversion rates.For Frontend,designed a simple, responsive interface using HTML & CSS.Used a dropdown menu for currency selection and an input field for the amount.Styled it with CSS to ensure a clean and user-friendly experience.For Backend, I Used JavaScript (Fetch API) to get real-time exchange rates.Integrated the Exchange Rate API (e.g., ExchangeRate-API or Open Exchange Rates).Implemented async/await to fetch data and dynamically update the conversion result.
+                    </div>
+                </div>
+            </div>
+            </section>
+        </section>
+        <section class="thirdSection" id="Contact-me">
+            <section id="contact">
+                <h2 class="ContactMe">Contact Me</h2>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+            
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+            
+                    <button type="submit">Send Message</button>
+                    <p id="formMessage"></p>
+                </form>
+        </section>
+    </section>
+    </main>
+    <footer>
+        <div class="footer">
+            © 2025 Sumana Halder.All rights reserved.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Designer', 'Web Developer','Software Engineer'],
+          typeSpeed: 50,
+        });
+      </script>
+    <script src="script.js"></script>
+</body>
+</html>

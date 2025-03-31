@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(0, 255, 191);
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(104, 241, 177);
+    height: 40px;
+    z-index: 1000;
+}
+nav ul{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li{
+    cursor: pointer;
+    margin: 0 25px;
+}
+nav ul li a:hover{
+    font-size: 1.1rem;
+    color: rgb(63, 161, 17);
+}
+.left{
+    cursor:default;
+    font-size: 2rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+img{
+    height: 500px;
+    width: 350px;
+    margin: 20px 0;
+}
+.leftSection{
+    font-size: 2rem;
+    margin: 100px 0 0 40px;
+}
+.firstSection > div{
+    width: 30%;
+}
+#element{
+    color: rgb(79, 17, 161);
+}
+.secondSection{
+    height: 110vh;
+    max-width: 80vw;
+    margin: auto;
+}
+.box{
+    display: flex;
+    margin-top: 20px;
+    height: 1px;
+    width: 60vw;
+    background-color: rgb(40, 133, 133);
+}
+.verticle{
+    margin: 0 100px;
+    height: 90px;
+    width: 1px;
+    background-color:  rgb(40, 133, 133);
+}
+h1{
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+.projects{
+    position: relative;
+    top: 75px;
+    width: 150px;
+}
+.text{
+    position: relative;
+    top: 86px;
+    width: 150px; 
+    font-size: 10px;
+    color:  rgb(40, 133, 133);
+}
+footer{
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(104, 241, 177);
+}
+.footer{
+    display: flex;
+    margin: 23px 122px;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    color: rgb(40, 133, 133);
+}
+button{
+    background-color: rgb(127, 182, 255);
+    border: 2px solid black;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.Tech-section{
+    margin-top: 30px;
+}
+h2{
+    font-size: 2.5rem;
+}
+.Tech-section ul li{
+    margin-top: 5px;
+    list-style: none;
+}
+.ContactMe{
+    margin-top: 20px;
+    text-align: center;
+}
+#contact {
+    width: 35%;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(89, 153, 153);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(30, 110, 110);
+}
+
+/* Mobile Devices (width < 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        height: 300px;
+        width: 250px;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+        margin: 50px 0;
+    }
+
+    #contact {
+        width: 90%;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    img {
+        height: 400px;
+        width: 300px;
+    }
+
+    .leftSection {
+        font-size: 1.8rem;
+    }
+
+    #contact {
+        width: 60%;
+    }
+}
+
+/* Large Screens (Desktop) */
+@media screen and (min-width: 1025px) {
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    img {
+        height: 500px;
+        width: 350px;
+    }
+
+    #contact {
+        width: 35%;
+    }
+}
